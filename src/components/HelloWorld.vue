@@ -35,7 +35,7 @@ function setPDF(pdfSource) {
 </script>
 
 <template>
-  <img v-show="isShownPic" src="img.jpg" style="width: 100%; display: none;" alt="panic" />
+  <img v-show="isShownPic" src="https://ais2.onrender.com/img.jpg" style="width: 100%; display: none;" alt="panic" />
   <div id="hlavicka" @keydown.space="isShownPic = false" @keydown.esc="isShownPic = true">
     <div id="ie2">
       <div id="svatek">
