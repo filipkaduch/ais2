@@ -1,7 +1,8 @@
 <script setup>
 import { computed, ref } from 'vue'
 
-const pdfText = ref('aaaa')
+const pdfText = ref('aaaa');
+const isShownPic = ref(false);
 defineProps({
   msg: {
     type: String,
@@ -13,13 +14,29 @@ const date = computed(() => {
   return new Date().toLocaleString().replace(',','');
 })
 
+const keyboardMap = (event) => {
+  switch (event.keyCode) {
+    case 37:
+      isShownPic.value = true;
+      event.preventDefault();
+      break;
+    case 39:
+      isShownPic.value = false;
+      event.preventDefault();
+      break;
+  }
+};
+
+window.addEventListener('keydown', keyboardMap);
+
 function setPDF(pdfSource) {
   pdfText.value = pdfSource;
 }
 </script>
 
 <template>
-  <div id="hlavicka">
+  <img v-show="isShownPic" src="img.jpg" style="width: 100%; display: none;" alt="panic" />
+  <div id="hlavicka" @keydown.space="isShownPic = false" @keydown.esc="isShownPic = true">
     <div id="ie2">
       <div id="svatek">
         <span></span>
