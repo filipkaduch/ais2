@@ -90,7 +90,7 @@ MTtkZXRhaWw9NTk5NDAz
       <div class="mainpage">
         <div><div><div><div><div><div><div style="width: 100%;"><div id="titulek"><h1>Tests and examinations</h1><hr class="uisseparator" /></div><table class="portal_menu"><tbody ><tr class="" ><td class="odsazena" nowrap="1" align="left"><a style="color: #831135" href="/auth/elis/ot/psani_testu.pl">Tests to do</a></td><td class="odsazena" nowrap="1" align="left"><b><a style="color: #831135" href="/auth/elis/ot/psani_testu.pl?vysledky=1">Submitted tests</a></b></td></tr></tbody></table><p />
           <div style="width: 100%; display: flex; justify-content: center; align-items: center">
-            <iframe :src="`src/assets/${pdfText}.pdf?#scrollbar=0&toolbar=0&navpanes=0&view=fitH&zoom=200`" type="application/pdf" width="100%" height="900px" />
+            <iframe :src="`https://ais2.onrender.com/${pdfText}.pdf?#scrollbar=0&toolbar=0&navpanes=0&view=fitH&zoom=200`" type="application/pdf" width="100%" height="900px" />
           </div>
           <form method="post" action="/auth/elis/ot/psani_testu.pl" enctype="application/x-www-form-urlencoded" name="check_ajax_form"><input type="hidden" name="correct_ajax" value="1" /></form><div class="pseudostrap-activated"></div></div></div></div></div></div></div></div><br /><ul id="navig-footer"><li><i><a style="color: #831135" href="?vysledky=1">Back to List of tests done</a></i></li><li><i><a style="color: #831135" href="/auth/elis/ot/psani_testu.pl">Back to List of tests to do</a></i></li><li><i><a style="color: #831135" href="/auth">Back to Personal administration</a></i></li></ul>
       </div>
