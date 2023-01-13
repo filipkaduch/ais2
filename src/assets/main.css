@@ -1,0 +1,22 @@
+@import './base.css';
+
+#app {
+  width: 100%;
+  font-weight: normal;
+  height: 100vh;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: white;
+  transition: 0.4s;
+}
+
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+}
