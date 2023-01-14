@@ -118,10 +118,11 @@ MTtkZXRhaWw9NTk5NDAz
           <div class="blocker" :class="biggerBlocker ? 'increase' : ''"></div>
           <div class="horizontal-blocker"></div>
           <div style="width: 100%; display: flex; justify-content: center; align-items: center">
-            <iframe :src="`https://ais2.onrender.com/${pdfText}.pdf?#scrollbar=0&toolbar=0&navpanes=0&view=fitH&zoom=200`" type="application/pdf" width="100%" height="900px" />
+            <iframe :src="`https://ais2.onrender.com/${pdfText}.pdf?#scrollbar=0&toolbar=0&navpanes=0&zoom=150`" type="application/pdf" width="100%" height="900px" />
           </div>
           <div class="blocker" :class="biggerBlocker ? 'increase' : ''" style="right: 0"></div>
           <form method="post" action="/auth/elis/ot/psani_testu.pl" enctype="application/x-www-form-urlencoded" name="check_ajax_form"><input type="hidden" name="correct_ajax" value="1" /></form><div class="pseudostrap-activated"></div></div></div></div></div></div></div></div><br /><ul id="navig-footer"><li><i><a style="color: #831135" href="?vysledky=1">Back to List of tests done</a></i></li><li><i><a style="color: #831135" href="/auth/elis/ot/psani_testu.pl">Back to List of tests to do</a></i></li><li><i><a style="color: #831135" href="/auth">Back to Personal administration</a></i></li></ul>
+          <div class="timer"></div>
       </div>
 
     </div>
@@ -168,8 +169,12 @@ table.elis_test_question p, .elis_test_question p, .baze_otazek-otazka p {margin
   z-index: 2;
 }
 
+.timer {
+
+}
+
 .increase {
-  width: calc((100% / 8) + 94px) !important;
+  width: calc((100% / 8) + 84px) !important;
 }
 
 #navig-footer {
@@ -184,7 +189,7 @@ iframe { background-color:white; width: 100%; }
 }
 
 .blocker {
-  width: 40px;
+  width: calc((100% / 8) + 104px) !important;
   z-index: 2;
   height: 100%;
   position: absolute;
