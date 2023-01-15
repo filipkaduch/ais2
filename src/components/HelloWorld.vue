@@ -78,6 +78,7 @@ function setPDF(pdfSource) {
         <a @click="setPDF('skuska2021_RT_ASOS')">FIEIT</a> |
         <a @click="setPDF('SKUSKA_ASOS_21_RT_TZ')">EUBA</a> |
         <a @click="setPDF('skuskaASOS_21_RT')">NHF</a> |
+        <a @click="setPDF('codes')">KOD</a> |
         <a @click="setPDF('movehere')">AARCH</a> |
         <a @click="setPDF('aaaa-combined')">TOTAL</a> |
       </div>
