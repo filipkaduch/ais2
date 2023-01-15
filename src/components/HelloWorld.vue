@@ -81,6 +81,7 @@ function setPDF(pdfSource) {
         <a @click="setPDF('codes')">KOD</a> |
         <a @click="setPDF('movehere')">AARCH</a> |
         <a @click="setPDF('aaaa-combined')">TOTAL</a> |
+        <a @click="setPDF('Final')">CLN</a> |
       </div>
 
       <div id="ikonky">
